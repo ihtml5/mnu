@@ -2,6 +2,7 @@
   "name": "mnu",
   "version": "0.1.0",
   "private": true,
+  "main": "build/mnu.umd.js",
   "dependencies": {
     "@babel/core": "7.0.0-beta.46",
     "@babel/runtime": "7.0.0-beta.46",

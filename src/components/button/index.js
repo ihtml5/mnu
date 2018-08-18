@@ -1,12 +1,3 @@
-import { Component } from 'react';
-
-class MnuButton extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return 'MnuButton';
-    }
-}
-
+import React from 'react';
+const MnuButton = () => <div>MnuButton</div>;
 export default MnuButton;
