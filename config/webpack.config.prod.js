@@ -15,6 +15,7 @@ const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent')
 const postcssAspectRatioMini = require('postcss-aspect-ratio-mini')
 const postcssPxToViewport = require('postcss-px-to-viewport')
 const postcssWriteSvg = require('postcss-write-svg')
+
 const postcssViewportUnits = require('postcss-viewport-units')
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
@@ -46,6 +47,9 @@ const sassModuleRegex = /\.module\.(scss|sass)$/;
 // common function to get style loaders
 const getStyleLoaders = (cssOptions, preProcessor) => {
   const loaders = [
+    {
+      loader: require.resolve('style-loader'),
+    },
     {
       loader: require.resolve('css-loader'),
       options: cssOptions,
