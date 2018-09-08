@@ -1,5 +1,5 @@
 import Button from './button';
-import Debug from './mdebug';
+import Debug from './debug';
 
 export {
     Button,

@@ -1,0 +1,8 @@
+.mnu-debug-con {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid #ddd;
+}

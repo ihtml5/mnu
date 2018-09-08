@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button } from '@/components';
+import App from './App';
 
-ReactDOM.render(<Button />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
