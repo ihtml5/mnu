@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Button, Debug } from '@/components';
+import { Button, Debug, Protector } from '@/components';
 
 class App extends Component {
 	render() {
@@ -14,6 +14,9 @@ class App extends Component {
 				<div>
 					<Debug />
 				</div>
+				<Protector name={'AppCon'}>
+					{() => { throw new Error()}}
+				</Protector>
 			</div>
 		);
 	}
